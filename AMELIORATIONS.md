@@ -1,37 +1,30 @@
-# Portfolio — notes de livraison
+# Portfolio — version française et anglaise
 
-Site statique HTML, CSS et JavaScript, compatible avec les chemins relatifs de GitHub Pages. Aucun framework ni service d’envoi ajouté. Publication sur GitHub Pages via la branche main.
+Site statique : HTML, CSS et JavaScript. Adresse : https://jackina835-ux.github.io/me/
 
-## Organisation retenue
+## Présentation
 
-Accueil : présentation, projets, compétences reliées aux réalisations, à propos, contact. Cinq fiches conservent leurs adresses, leurs captures commentées et les dépôts existants. Navigation entre projets et page 404 ajoutées.
+Interface sobre, fond charbon en mode sombre et blanc cassé en mode clair, accent vert, typographies Manrope et DM Sans avec polices système de remplacement. Photo droite, sans rotation. Le thème est mémorisé et appliqué avant l’affichage.
 
-## Direction visuelle
+La plateforme React / Spring Boot / PostgreSQL apparaît en premier. Quatre réalisations professionnelles et un jeu académique sont identifiés selon les informations fournies. Les compétences mises en avant sont reliées aux réalisations présentées. Le parcours et le stage sont repris des CV, sans ajout de niveau de maîtrise ni de résultat chiffré.
 
-Trois pistes considérées : éditoriale ivoire/encre/bleu, atelier technique sombre/vert, galerie blanche/terracotta. La première est retenue pour la lisibilité et la priorité donnée aux réalisations.
+Accueil et cinq fiches disponibles en français et en anglais. Le sélecteur conserve la fiche en cours. Les captures des applications restent dans leur langue d’origine. Les deux CV fournis sont téléchargeables depuis les pages et conservés sans modification dans `assets/cv/`. LinkedIn provient de `suivre.txt` ; les liens GitHub existants sont conservés.
 
-Mode sombre principal : fond #0d1118, texte #f4f7fb, secondaire #b6c0cf, accents #83a8ff, #9b8cff et #62e0c7. Mode clair : fond #eef3f8, texte #162031, secondaire #536074, accents #476fe8, #735fe7 et #19a893. Cadre du portrait arrondi avec bordure et ombre discr?te ; les aper?us de Tadidi Ary et Grand March? utilisent des cadres verticaux avec un espace r?serv? au lien de d?couverte. Police système sans téléchargement, contenu limité à 1120 px, galerie sur deux colonnes puis une sur mobile. Captures non recadrées, hauteur réservée, chargement différé hors portrait. Focus clavier visible, lien d’évitement et préférence de réduction des animations.
+## Vérification
 
-## Informations à compléter
+- `python verifier_portfolio.py` : treize pages, liens relatifs, ancres, identifiants, textes alternatifs et dimensions des images.
+- `node --check script.js` et `node --check theme-init.js` : syntaxe JavaScript.
+- Vérification dans Microsoft Edge : accueil FR / EN à 1440, 768, 390 et 320 px, thèmes, mémorisation du thème, filtres, menu mobile, touche Échap et téléchargement du CV dans chaque langue.
+- Treize pages vérifiées à 390 px : absence de débordement horizontal et chargement de toutes les images.
+- Navigation et cinq projets accessibles sans JavaScript. Réduction des mouvements prise en compte dans la feuille de style.
+- `git diff --check` : contrôle des espaces.
 
-Les fichiers ne contiennent pas de CV, de dates de formation, de diplômes ni de chronologie d’expérience. Fournir ces éléments avant d’ajouter les rubriques correspondantes. Pour approfondir chaque étude de cas : préciser le rôle personnel, le travail en équipe, l’état du projet, les difficultés réellement rencontrées, les solutions, les résultats vérifiables et les limites. Aucune information manquante n’a été inventée.
+## Informations à approfondir
 
-Les compétences électroniques sont conservées comme compétences déclarées ; une réalisation documentée permettrait de les illustrer. Une version anglaise et un aperçu social avec URL absolue pourront être ajoutés lorsque les contenus traduits et l’adresse publique seront définis.
+La contribution exacte dans les éventuels projets d’équipe, les difficultés techniques rencontrées et l’état de livraison de chaque projet restent à préciser pour enrichir les études de cas. Aucun de ces éléments n’est inventé.
 
-Le contact utilise les liens e-mail et téléphone existants. Le bouton e-mail ouvre le logiciel de messagerie ; aucun envoi automatique ni confirmation d’envoi simulée. Le seul stockage ajouté/utilisé par l’interface est la préférence de thème dans le navigateur. Aucun outil de mesure d’audience ajouté.
+Le compte GitHub inscrit dans les PDF fournis se termine par `jackina835-uxet`, alors que le compte utilisé par le site et le dépôt est `jackina835-ux`. Les PDF sources restent inchangés.
 
-## Prévisualiser
+## Prévisualisation
 
-Ouvrir `index.html` directement ou, depuis ce dossier, lancer `python -m http.server 8000 --bind 127.0.0.1`, puis consulter `http://127.0.0.1:8000`. Arrêter le serveur avec Ctrl+C. Pour l’hébergement existant, garder les fichiers HTML, CSS, JavaScript et `assets` à la racine du site.
-
-## Vérifications réalisées
-
-`python verifier_portfolio.py` contrôle les sept pages, les fichiers locaux, les ancres, l’unicité des identifiants, les titres principaux, les textes alternatifs et les dimensions des images. `node --check script.js` contrôle la syntaxe JavaScript. Les images référencées ont été décodées avec Pillow. Les associations principales de texte et de fond ont été calculées avec la formule WCAG et dépassent 4,5:1. `git diff --check` contrôle les espaces dans le diff.
-
-La tentative d’aperçu avec Edge headless a échoué au démarrage du processus graphique. Le rendu mobile/ordinateur, les débordements éventuels et les interactions réelles (menu, clavier, préférence de thème) restent à vérifier dans un navigateur. Les destinations externes n’ont pas été contrôlées sur le réseau.
-
-## Mise à jour de l’interface
-
-Portrait encadré, cartes de projets harmonisées, filtres accessibles Tous / Mobile / Web / Logiciel, repérage de la section active, et styles mobiles affinés. Filtres masqués sans JavaScript : les cinq projets restent visibles. Contrôle des filtres exécuté avec Node, vérification des sept pages et syntaxe JavaScript validées.
-
-Adresse publique vérifiée (HTTP 200) : https://jackina835-ux.github.io/me/
+Lancer `python -m http.server 8000 --bind 127.0.0.1` depuis la racine, puis ouvrir http://127.0.0.1:8000/. Le site est publié sur GitHub Pages via la branche `main`.

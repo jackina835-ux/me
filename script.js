@@ -1,9 +1,10 @@
 ﻿(() => {
  const root=document.documentElement;
+ const english=root.lang==='en';
  root.classList.add('js');
  const theme=document.getElementById('themeToggle');
  try { const stored=localStorage.getItem('portfolio-theme'); if(stored==='light'||stored==='dark') root.dataset.theme=stored; } catch {}
- function syncTheme(){if(!theme)return;const dark=root.dataset.theme==='dark';theme.textContent=dark?'☀':'◐';theme.setAttribute('aria-label',dark?'Passer en mode clair':'Passer en mode sombre');}
+ function syncTheme(){if(!theme)return;const dark=root.dataset.theme==='dark';theme.textContent=dark?'☀':'☾';theme.setAttribute('aria-label',english?(dark?'Switch to light mode':'Switch to dark mode'):(dark?'Passer en mode clair':'Passer en mode sombre'));}
  syncTheme();
  theme?.addEventListener('click',()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('portfolio-theme',root.dataset.theme);}catch{}syncTheme();});
  const filters=document.querySelector('.project-filters');
@@ -16,7 +17,7 @@
    filters.querySelectorAll('[data-filter]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
    let count=0;
    cards.forEach(card=>{card.hidden=button.dataset.filter!=='all'&&card.dataset.category!==button.dataset.filter;if(!card.hidden)count++;});
-   document.querySelector('.filter-status').textContent=`${count} projet${count>1?'s':''} affiché${count>1?'s':''}.`;
+   document.querySelector('.filter-status').textContent=english?`${count} project${count>1?'s':''} displayed.`:`${count} projet${count>1?'s':''} affiché${count>1?'s':''}.`;
   });
  }
  const links=[...document.querySelectorAll('.nav-links a[href^="#"]')];
@@ -30,7 +31,7 @@
  if(menu&&nav){
   menu.hidden=false;
   function close(){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu';}
-  menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'Fermer':'Menu';});
+  menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?(english?'Close':'Fermer'):'Menu';});
   nav.addEventListener('click',event=>{if(event.target.closest('a'))close();});
   document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){close();menu.focus();}});
  }
