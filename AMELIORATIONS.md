@@ -4,7 +4,9 @@ Site statique : HTML, CSS et JavaScript. Adresse : https://jackina835-ux.github.
 
 ## Présentation
 
-Interface sobre, fond charbon en mode sombre et blanc cassé en mode clair, accent vert, typographies Manrope et DM Sans avec polices système de remplacement. Photo droite, sans rotation. Le thème est mémorisé et appliqué avant l’affichage.
+Direction choisie : proposition 03, « Éditorial terracotta ». Fond ivoire en mode clair, brun encre en mode sombre, accents terracotta. Titres en DM Serif Display, texte en DM Sans, avec polices système de remplacement. Photo circulaire droite, sans rotation. Les captures des projets occupent deux colonnes sur ordinateur et une sur téléphone. Grand Marché présente deux vrais écrans côte à côte. Le thème est mémorisé et appliqué avant l’affichage.
+
+`styles.css` contient la structure commune ; `editorial.css` applique la direction artistique aux treize pages, y compris les fiches anglaises.
 
 La plateforme React / Spring Boot / PostgreSQL apparaît en premier. Quatre réalisations professionnelles et un jeu académique sont identifiés selon les informations fournies. Les compétences mises en avant sont reliées aux réalisations présentées. Le parcours et le stage sont repris des CV, sans ajout de niveau de maîtrise ni de résultat chiffré.
 
