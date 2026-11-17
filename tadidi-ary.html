@@ -4,24 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Tadidi Ary | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+<meta name="description" content="Jeu mobile de mémoire basé sur des séquences de couleurs. Le joueur mémorise un ordre, le reproduit, gagne des points et débloque progressivement de nouveaux niveaux.">
+<meta property="og:title" content="Tadidi Ary | Portfolio">
+<meta property="og:description" content="Jeu mobile de mémoire basé sur des séquences de couleurs. Le joueur mémorise un ordre, le reproduit, gagne des points et débloque progressivement de nouveaux niveaux.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta name="color-scheme" content="light dark">
 </head>
 <body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="wrap">
-    <header class="topbar glass">
-      <a class="brand" href="index.html"><span class="brand-mark">DJ</span> Retour au portfolio</a>
-      <nav class="nav-links">
-        <a href="index.html#projets">Projets</a>
-        <a href="#captures">Captures</a>
-      </nav>
-      <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">☀️</button>
-    </header>
+    <header class="topbar">
+<a class="brand" href="index.html"><span class="brand-mark">DJ<span class="brand-dot">.</span></span><span>Dina Jackina<small>Développeuse junior</small></span></a>
+<nav class="nav-links" id="navigation" aria-label="Navigation principale"><a href="index.html#projets">Projets</a><a href="index.html#competences">Compétences</a><a href="index.html#apropos">À propos</a><a href="index.html#contact">Contact ↗</a></nav>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Passer en mode sombre">◐</button>
+<button class="menu-toggle" id="menuToggle" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu</button>
+</header>
+<main id="contenu" tabindex="-1">
 
     <section class="detail-hero">
-      <a class="back-link" href="index.html">← Retour à l’accueil</a>
+      <a class="back-link" href="index.html#projets">← Tous les projets</a>
       <div class="detail-shell glass reveal visible">
         <div>
           <span class="badge"><span class="dot"></span> Application mobile · Jeu</span>
@@ -29,10 +32,10 @@
           <p class="lead">Jeu mobile de mémoire basé sur des séquences de couleurs. Le joueur mémorise un ordre, le reproduit, gagne des points et débloque progressivement de nouveaux niveaux.</p>
           <ul class="tags"><li>React Native</li><li>Expo</li><li>JavaScript</li><li>Jeu mobile</li></ul>
           <div class="detail-actions"><a class="btn primary" href="#captures">Voir les interfaces</a><a class="btn secondary" href="https://github.com/jackina835-ux/tadidio-ary" target="_blank" rel="noreferrer">GitHub ↗</a></div>
-          <div class="info-grid"><div class="info-card glass"><h3>Le projet</h3><p>Jeu mobile de mémoire basé sur des séquences de couleurs. Le joueur mémorise un ordre, le reproduit, gagne des points et débloque progressivement de nouveaux niveaux.</p></div><div class="info-card glass"><h3>À retenir</h3><p>Le jeu combine mémorisation visuelle, progression par niveaux, score et paramètres audio/haptiques dans une interface mobile cohérente.</p></div></div>
+          <div class="info-grid"><div class="info-card glass"><h2 class="info-title">Contexte et objectif</h2><p>Jeu mobile de mémoire basé sur des séquences de couleurs. Le joueur mémorise un ordre, le reproduit, gagne des points et débloque progressivement de nouveaux niveaux.</p></div><div class="info-card glass"><h2 class="info-title">Points clés</h2><p>Le jeu combine mémorisation visuelle, progression par niveaux, score et paramètres audio/haptiques dans une interface mobile cohérente.</p></div></div>
         </div>
         <div class="preview-card glass">
-          <img src="assets/tadidi-niveaux.jpeg" alt="Aperçu du projet Tadidi Ary">
+          <img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-niveaux.jpeg" alt="Aperçu du projet Tadidi Ary">
         </div>
       </div>
     </section>
@@ -46,7 +49,7 @@
       </div>
       <div class="gallery">
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-niveaux.jpeg" alt="Choix des niveaux"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-niveaux.jpeg" alt="Choix des niveaux"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 01</span>
             <h3>Choix des niveaux</h3>
@@ -55,7 +58,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-accueil.jpeg" alt="Accueil"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-accueil.jpeg" alt="Accueil"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 02</span>
             <h3>Accueil</h3>
@@ -64,7 +67,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-victoire.jpeg" alt="Victoire"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-victoire.jpeg" alt="Victoire"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 03</span>
             <h3>Victoire</h3>
@@ -73,7 +76,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-memoire.jpeg" alt="Mémorisation"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-memoire.jpeg" alt="Mémorisation"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 04</span>
             <h3>Mémorisation</h3>
@@ -82,7 +85,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-reponse.jpeg" alt="Réponse"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-reponse.jpeg" alt="Réponse"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 05</span>
             <h3>Réponse</h3>
@@ -91,7 +94,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-scores.jpeg" alt="Scores"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-scores.jpeg" alt="Scores"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 06</span>
             <h3>Scores</h3>
@@ -100,7 +103,7 @@
         </article>
         
         <article class="gallery-card glass reveal">
-          <div class="gallery-media"><img src="assets/tadidi-parametres.jpeg" alt="Paramètres"></div>
+          <div class="gallery-media"><img loading="lazy" decoding="async" width="576" height="1280" src="assets/tadidi-parametres.jpeg" alt="Paramètres"></div>
           <div class="gallery-copy">
             <span class="eyebrow">Écran 07</span>
             <h3>Paramètres</h3>
@@ -111,7 +114,8 @@
       <a class="backtop" href="#">↑ Retour en haut</a>
     </section>
 
-    <footer class="footer">
+    <section class="other-projects"><h2>Explorer les autres projets</h2><nav aria-label="Autres projets"><a href="grand-marche.html">Grand Marché ↗</a><a href="gestion-projets.html">Gestion de projets ↗</a><a href="co-rompre-site.html">Site Co-Rompre ↗</a><a href="gestion-membres.html">Gestion des membres ↗</a></nav><a class="text-link" href="index.html#projets">← Revenir à tous les projets</a></section></main>
+<footer class="footer">
       <span>© 2026 Dina Jackina Razanadrakoto</span>
       <span>Tadidi Ary · Page projet</span>
     </footer>
